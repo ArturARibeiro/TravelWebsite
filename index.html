@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <title>Inicio de alguma coisa</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/all.css">
+
+    <style scoped>
+        @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
+        .container-home {
+            height: 100vh;
+            background-image: url('https://images.wallpaperscraft.com/image/burj_al_arab_hotel_dubai_uae_sky_sea_59061_3840x2160.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding-top: 30vh;
+        }
+
+        .welcome {
+            padding-top: 50px;
+            padding-left: 20px;
+        }
+
+        .welcome button {
+            margin-top: 2em;
+            border: solid 1px white;
+            background-color: transparent;
+            color: white;
+            font-size: 1vw;
+            font-weight: 500;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 50px;
+            transition: .2s ease;
+            outline-style: none !important;
+        }
+
+        .welcome button:hover {
+            background-color: white;
+            color: rgb(66, 66, 66);
+        }
+
+        .slide {
+            padding: 2em;
+            display: flex;
+            overflow-x: scroll;
+            max-width: 50vw;
+            background-color: rgba(255, 255, 255, 0.281);
+            border-radius: 20px;
+        }
+
+        ::-webkit-scrollbar {
+            width: 0px;
+            height: 0px;
+        }
+
+        ::-webkit-scrollbar-button {
+            width: 0px;
+            height: 0px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #e1e1e1;
+            border: 0px none #ffffff;
+            border-radius: 0px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #ffffff;
+        }
+
+        ::-webkit-scrollbar-thumb:active {
+            background: #000000;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #000000;
+            border: 0px none #ffffff;
+            border-radius: 0px;
+        }
+
+        ::-webkit-scrollbar-track:hover {
+            background: #666666;
+        }
+
+        ::-webkit-scrollbar-track:active {
+            background: #333333;
+        }
+
+        ::-webkit-scrollbar-corner {
+            background: transparent;
+        }
+
+        .card {
+            margin: 1em;
+            margin-right: 3em;
+            overflow: hidden;
+            min-width: 250px;
+            height: 350px;
+            border: none;
+            border-radius: 20px;
+            box-shadow: 20px 20px 20px -10px rgba(48, 48, 48, 0.61);
+        }
+
+        .card:hover>img {
+            transform: scale(1.2) translate(-42%);
+            left: 50%;
+            cursor: pointer;
+        }
+
+        .card img {
+            position: absolute;
+            height: 100%;
+            left: 50%;
+            transform: translate(-50%);
+            -moz-transition: all .2s;
+            -webkit-transition: all .2s;
+            transition: all .2s;
+        }
+
+        .controlls label {
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            margin: 20px;
+            transform: scale(1.6);
+        }
+
+        .controlls label:hover {
+            cursor: pointer;
+            margin: 20px;
+            transform: scale(1.7);
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar fixed-top">
+        <a href="#" class="navbar-brand  text-white">
+            Nome da empresa
+        </a>
+        <ul class="nav">
+            <li class="nav-item"><a href="#" class="nav-link text-white">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-white">Services</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-white">About Us</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-white">Contact</a></li>
+        </ul>
+
+        <ul class="nav">
+            <li class="nav-item"><a href="#" class="nav-link text-white"><i class="fab fa-facebook-f"></i></i></a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-white"><i class="fab fa-twitter"></i></a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-white"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+    </nav>
+
+    <div class="container-fluid container-home">
+        <div class="row">
+            <div class="col welcome">
+                <div class="display-4" style="font-family: 'Comfortaa', cursive; color: white;">
+                    Confira nossos planos e viage com conforto e segurança para todo o mundo.
+                </div>
+                <center><button> Planos </button></center>
+            </div>
+            <div class="col">
+                <div class="slide" id="slide">
+                    <div class="card">
+                        <img
+                            src="https://blog.emania.com.br/wp-content/uploads/2019/07/dicas-de-cameras-para-fotografia-de-paisagem-corpo-Blog-eMania-08-07.jpg">
+                    </div>
+
+                    <div class="card">
+                        <img
+                            src="https://besthqwallpapers.com/Uploads/6-11-2017/27286/thumb2-interior-of-hotel-room-modern-design-brown-tone-hotel-room-room-for-three.jpg">
+                    </div>
+
+                    <div class="card">
+                        <img src="https://wallpapercrafter.com/desktop/29991-Maldives-hotel-4K.jpg">
+                    </div>
+
+                    <div class="card">
+                        <img
+                            src="https://lh3.googleusercontent.com/proxy/1KbROtzhSKDaTmFPl-5i1qhRyYLUvGsLuSwQAKkmeChM-dVxVp6NiO2y5KpUYPam2rMQYpkMNK32hBEaQBvX73GTz7KXtwrvLBXX4EC3ANI9f4rtp53PcExXKnK794MvTPhkBTSlr78q5hUJnNu1mIqCfWVRI3YQYJDiMbA">
+                    </div>
+
+                    <div class="card">
+                        <img src="https://i.pinimg.com/originals/d0/1c/79/d01c7974bcdd61091068bc2f8019769f.jpg">
+                    </div>
+                    <div class="">
+                        &nbsp;&nbsp;&nbsp;
+                    </div>
+                </div>
+                <div class="controlls d-flex justify-content-end mr-5">
+                    <label id="prev">
+                        <i class="fas fa-chevron-circle-left"></i>
+                    </label>
+                    <label id="next">
+                        <i class="fas fa-chevron-circle-right"></i>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/all.js"></script>
+    <script>
+        $(function () {
+            $("#").draggable({
+                containment: 'parent'
+            });
+        });
+
+        $('#next').click(function () {
+            $('#slide').animate({ scrollLeft: '+=640' }, 500, 'easeOutQuad');
+        });
+
+        $('#prev').click(function () {
+            $('#slide').animate({ scrollLeft: '-=640' }, 500, 'easeOutQuad');
+        });
+    </script>
+</body>
+
+</html>
