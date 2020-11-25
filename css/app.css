@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
+.container-home {
+    height: 100vh;
+    background-image: url('https://images.wallpaperscraft.com/image/burj_al_arab_hotel_dubai_uae_sky_sea_59061_3840x2160.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 30vh;
+    background-attachment: fixed;
+}
+
+.welcome {
+    max-width: 1000px;
+    margin: 50px auto;
+    text-shadow: 5px 5px 30px rgba(0, 0, 0, 0.63);
+}
+
+.welcome button {
+    margin-top: 2em;
+    border: solid 1px white;
+    background-color: transparent;
+    color: white;
+    font-size: 1vw;
+    font-weight: 500;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 50px;
+    transition: .2s ease;
+    outline-style: none !important;
+}
+
+.welcome button:hover {
+    background-color: white;
+    color: rgb(66, 66, 66);
+}
+
+.swipe-up{
+    cursor: pointer;
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%);
+    background-color: transparent;
+    border: solid 1px white;
+    height: 50px;
+    width: 25px;
+    border-radius: 50px;
+}
+
+@keyframes swipeup{
+    from {top: 70%; opacity: 1;}
+    to {top: 10%; opacity: 0;}
+}
+
+.swipe-up::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%);
+    /* background-color: white; */
+    border: solid 1px rgba(255, 255, 255, 0.678);
+    height: 7px;
+    width: 7px;
+    border-radius: 50px;
+    animation: swipeup 2.5s infinite;
+    animation-direction: alternate-reverse;
+    -moz-animation: swipeup 2.5s infinite;
+    -moz-animation-direction: alternate-reverse;
+    -webkit-animation: swipeup 2.5s infinite;
+    -webkit-animation-direction: alternate-reverse;
+}
+
+.swipe-up label{
+    position: absolute;
+    color: rgba(255, 255, 255, 0.555);
+    left: 50%;
+    top: 100%;
+    width: 100px;
+    text-align: center;
+    transform: translate(-50%);
+}
+
+.slide {
+    padding: 1em;
+    margin-left: -2em;
+    margin-right: -2em;
+    display: flex;
+    overflow-x: scroll;
+    background-color: transparent;
+    max-width: 105%;
+    border-radius: 20px;
+}
+
+.slide::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+.slide::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+
+.slide::-webkit-scrollbar-thumb {
+    background: #e1e1e1;
+    border: 0px none #ffffff;
+    border-radius: 0px;
+}
+
+.slide ::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
+}
+
+.slide::-webkit-scrollbar-thumb:active {
+    background: #000000;
+}
+
+.slide::-webkit-scrollbar-track {
+    background: #000000;
+    border: 0px none #ffffff;
+    border-radius: 0px;
+}
+
+.slide::-webkit-scrollbar-track:hover {
+    background: #666666;
+}
+
+.slide::-webkit-scrollbar-track:active {
+    background: #333333;
+}
+
+.slide::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+.card {
+    margin: 1em;
+    margin-right: 3em;
+    overflow: hidden;
+    min-width: 250px;
+    height: 350px;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0px 55px 20px -50px rgb(110, 110, 110);
+}
+
+.card:hover > img {
+    transform: scale(1.1) translate(-45%);
+    left: 50%;
+    cursor: pointer;
+    filter: brightness(60%);
+}
+
+.card:hover > label {
+    opacity: 1;
+}
+
+.card img {
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    -moz-transition: all .2s;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+}
+
+.card label{
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 17pt;
+    color: white;
+    text-align: center;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+.controlls label {
+    color: rgb(95, 95, 95);
+    cursor: pointer;
+    margin: 20px;
+    transform: scale(1.6);
+}
+
+.controlls label:hover {
+    cursor: pointer;
+    margin: 20px;
+    transform: scale(1.7);
+}
+
+
+.footer{
+    position: relative;
+    bottom: 0px;
+    margin-top: 5em;
+}
