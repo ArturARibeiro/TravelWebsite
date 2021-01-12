@@ -195,6 +195,21 @@
     transform: scale(1.7);
 }
 
+.describe-place{
+    display: none;
+}
+
+#1:checked + .describe-place{
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: grey;
+}
+
+
+
+
 
 .footer{
     position: relative;
