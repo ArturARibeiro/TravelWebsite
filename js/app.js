@@ -4,7 +4,16 @@
 //     });
 // });
 
+$(window).scroll(function(){
+    var plans = $('#plan_section').offset().top;
 
+    if($(this).scrollTop() > plans){
+        console.log('foi')
+        $('.nav-link').addClass("text-muted");
+    }else{
+        $('.nav-link').removeClass("text-muted");
+    }
+})
 
 $('#next').click(function () {
     $('#slide').animate({ scrollLeft: '+=640' }, 500, 'easeInOutQuad');
@@ -15,6 +24,6 @@ $('#prev').click(function () {
 });
 
 $('#swipeup').click(function () {
-    targetOffset = $('#aboutus').offset().top;
+    targetOffset = $('#plans').offset().top;
     $('html, body').animate({ scrollTop: targetOffset }, 700);
 });

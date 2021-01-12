@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+body{
+    overflow-x: hidden;
+}
+/* .section_full{
+    height: 100vh;
+} */
 
 .container-home {
     height: 100vh;
-    background-image: url('https://images.wallpaperscraft.com/image/burj_al_arab_hotel_dubai_uae_sky_sea_59061_3840x2160.jpg');
+    background-image: url('../img/background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 30vh;
@@ -83,6 +89,22 @@
     text-align: center;
     transform: translate(-50%);
 }
+
+
+.card_planos{
+    min-width: 300px;
+    max-width: 340px;
+    border: solid 1px rgb(236, 236, 236);
+    border-radius: 10px;
+}
+.button_plan{transition: all .1s ease-in;}
+.button_plan:hover{
+    background-color: #0275d8;
+    color: white !important;
+}
+
+
+
 
 .slide {
     padding: 1em;
