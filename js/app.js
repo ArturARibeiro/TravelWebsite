@@ -10,8 +10,10 @@ $(window).scroll(function(){
     if($(this).scrollTop() > plans){
         console.log('foi')
         $('.nav-link').addClass("text-muted");
+        $('#navbar-top').addClass("bg-white");
     }else{
         $('.nav-link').removeClass("text-muted");
+        $('#navbar-top').removeClass("bg-white");
     }
 })
 
