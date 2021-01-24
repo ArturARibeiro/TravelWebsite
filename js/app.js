@@ -1,14 +1,7 @@
-// $(function () {
-//     $("#").draggable({
-//         containment: 'parent'
-//     });
-// });
-
 $(window).scroll(function(){
     var plans = $('#plan_section').offset().top;
 
     if($(this).scrollTop() > plans){
-        console.log('foi')
         $('.nav-link').addClass("text-muted");
         $('#navbar-top').addClass("bg-white");
     }else{
@@ -27,5 +20,5 @@ $('#prev').click(function () {
 
 $('#swipeup').click(function () {
     targetOffset = $('#plans').offset().top;
-    $('html, body').animate({ scrollTop: targetOffset }, 700);
+    $('html, body').animate({ scrollTop: targetOffset - 12 }, 700);
 });

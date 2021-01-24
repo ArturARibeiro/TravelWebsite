@@ -1,8 +1,8 @@
 <!doctype html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
-    <title>Trabalho de Inglês</title>
+    <title>Home</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -12,18 +12,10 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/mobile-nav.css">
 </head>
 
 <body>
-
-    <!-- Logo do whatsapp -->
-    <div class="whatsapp_contact bg-success">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp"
-            viewBox="0 0 16 16" style="color: white;">
-            <path
-                d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
-        </svg>
-    </div>
 
     <!-- section 1 -->
     <nav class="navbar fixed-top" id="navbar-top">
@@ -31,10 +23,10 @@
             Company Name
         </a>
         <ul class="nav">
-            <li class="nav-item"><a href="#" class="nav-link text-white">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link text-white">Services</a></li>
-            <li class="nav-item"><a href="#" class="nav-link text-white">About Us</a></li>
-            <li class="nav-item"><a href="#" class="nav-link text-white">Contact</a></li>
+            <li class="nav-item"><a href="index.html" class="nav-link text-white font-weight-bold">Home</a></li>
+            <li class="nav-item"><a href="services.html" class="nav-link text-white">Services</a></li>
+            <li class="nav-item"><a href="AboutUs.html" class="nav-link text-white">About Us</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link text-white">Contact</a></li>
         </ul>
 
         <ul class="nav">
@@ -46,7 +38,7 @@
 
     <div class="container-fluid container-home">
         <div class="welcome">
-            <div class="display-4 text-center" style="font-family: 'Comfortaa', cursive; color: white;" id="welcome">
+            <div class="text-center" style="font-family: 'Comfortaa', cursive; color: white;" id="welcome">
                 Check out our plans and travel in comfort and safety for everyone.
             </div>
             <!-- <center><button> Planos </button></center> -->
@@ -62,12 +54,12 @@
     <section class="section_full" id="plan_section">
         <div class="container text-dark p-4">
             <div class="p-4 font-weight-light text-left" id="plans">
-                <div class="display-4">
+                <div class="title-lg">
                     Check out our plans
-                </div> 
+                </div>
                 <!-- <p class="ml-5 h4 font-weight-light">Discover the best plan for your family</p> -->
             </div>
-            
+
 
             <div class="d-flex justify-content-around flex-wrap">
 
@@ -130,7 +122,7 @@
     </section>
 
     <div class="container text-dark p-4" id="aboutus">
-        <div class="p-4 display-4 font-weight-light text-center">Who we are</div>
+        <div class="p-4 title-lg font-weight-light text-center">Who we are</div>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus corporis similique dolor quibusdam repellat
         facere iusto in consequuntur temporibus nostrum sit, tempore eveniet ipsa aperiam corrupti. Ratione atque
         eveniet iusto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis doloremque ducimus consectetur eos
@@ -159,45 +151,40 @@
     </div>
     <div class="container">
 
-        <div class="p-4 display-4 font-weight-light">Places to meet</div>
+        <div class="p-4 title-lg font-weight-light">Places to meet</div>
 
         <div class="slide" id="slide">
             <div class="card">
-                <img src="img/paris.jpeg">
-                <label for="">
+                <img src="img/paris-back.jfif" style="left: 0%;">
+                <label for="" onclick="showPlace('Paris')">
                     saiba mais
                 </label>
             </div>
 
             <div class="card">
-                <img src="img/veneza.jpeg">
-                <label for="1">
-                    saiba mais
-                </label>
-                <input type="checkbox" name="#" id="1" style="display: block;">
-
-                <div class="describe-place">
-                    adasdad
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="img/coliseu.jpg">
-                <label for="">
+                <img src="img/veneza-back.jfif">
+                <label for=""  onclick="showPlace('Veneza')">
                     saiba mais
                 </label>
             </div>
 
             <div class="card">
-                <img src="img/quebec.jpg">
-                <label for="">
+                <img src="img/coliseu-back.jfif">
+                <label for=""  onclick="showPlace('Coliseu')">
                     saiba mais
                 </label>
             </div>
 
             <div class="card">
-                <img src="img/fortaleza.jpg">
-                <label for="">
+                <img src="img/quebec-back.jfif">
+                <label for=""  onclick="showPlace('Quebec')">
+                    saiba mais
+                </label>
+            </div>
+
+            <div class="card">
+                <img src="img/fortaleza-back.jfif">
+                <label for=""  onclick="showPlace('Fortaleza')">
                     saiba mais
                 </label>
             </div>
@@ -248,18 +235,123 @@
         <p class="text-muted">© 2021 Grupo de TSI | All rights reserved</p>
     </div>
 
+
+    <!-- 
+        --BOTÃO DE CONTATO POR WHATSAPP. ELE NÃO CONTÉM UMA FUNÇÃO ATIVAVEL, SERVINDO APENAS SIMBOLICAMENTE COMO
+        --UM MEIO DE CONTATO COM A EMPRESA POR WHATSAPP
+    -->
+    <div class="whatsapp_contact bg-success">
+        <i class="bi bi-whatsapp"></i>
+    </div>
+
+
+    <!-- 
+    --  BARRA DE NAVEGAÇÃO MOBILE. ELA ESTÁ NO FIM DO DOCUMENTO PARA QUE O Z-INDEX SEJA MAIOR QUE QUALQUER OUTRO NA PAGINA.
+    --  ELA APARECE EM DISPOSITIVOS COM MENOS DE 1024PX HORIZONTAIS
+     -->
+    <nav class="mobile-nav">
+        <input id="toggler" type='checkbox'>
+        <label for="toggler">
+            <div class='menu-mobile'>
+                <span class='hamburger'></span>
+            </div>
+        </label>
+
+        <ul class="ul-mobile" style="transform: translate(-50%, 30%) !important;">
+            <li><a href="index.html" onclick="MobileMenu()">Home</a></li><br />
+            <li><a href="services.html" onclick="MobileMenu()">Services</a></li><br />
+            <li><a href="AboutUs.html" onclick="MobileMenu()">About Us</a></li><br />
+            <li><a href="contact.html" onclick="MobileMenu()">Contact</a></li><br />
+        </ul>
+    </nav>
+
+    <div class="container-place container-fluid position-fixed shadow">
+        <button type="button" class="close text-white text-center" aria-label="Close" onclick="hidePlace()">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="content-place">
+
+        </div>
+    </div>  
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
     <script src="js/all.js"></script>
     <script src="js/app.js"></script>
+    <script>
+
+        $('#slide').on('hover', function(){
+            var teclaEsquerda = jQuery.Event("keypress");
+
+            teclaEsquerda.which = 16; //Código da tecla - seta esquerda
+
+            $("#slide").trigger(teclaEsquerda);
+
+        })
+
+        function hidePlace(){
+            $('.container-place').css({'opacity' : '0', 'pointer-events' : 'none'});
+        }
+
+        function showPlace(place){
+
+            // alert('kajdbnakjwdn')
+
+            // return false;
+
+            var container = $('.container-place');
+            var content = $('.content-place');
+
+            content.empty();
+
+            container.css({'transition' : 'all .3s ease', 'opacity' : '1', 'pointer-events' : 'all'});
+
+            if(place == "Paris"){
+                
+                container.css({'background-image' : 'URL("img/paris-back.jfif")', 'background-position' : 'right'});
+
+                content.append("<div class='display-2 text-white'>PARIS <img src='https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg' width='30' class='img-fluid' title='French'></div>");
+                content.append("<div class='text-white text-place' style='position: absolute; bottom: 10px;'>Paris é a capital da França e uma das cidades mais importantes e influentes do mundo. Do ponto de vista turístico, Paris é uma das cidades mais visitadas da Europa, segundo o site <a href='https://www.tudosobreparis.com/' class='text-success' target='blank'>www.tudosobreparis.com</a></div>");
+            }
+
+            if(place == "Veneza"){
+                container.css({'background-image' : 'URL("img/veneza-back.jfif")', 'background-position' : 'center'});
+
+
+                content.append("<div class='display-4 text-white'>VENEZA <img src='https://upload.wikimedia.org/wikipedia/commons/0/03/Flag_of_Italy.svg' width='30' class='img-fluid' title='Italy'></div>");
+                content.append("<div class='text-white text-place' style='position: absolute; bottom: 10px;'>A cidade de Veneza se estende sobre uma série de 119 ilhas que emergem da ampla lagoa situada entre a terra firme e o mar aberto. Até sua fundação era habitada por poucos habitantes ilírios e vênetos que viviam sobre a água da lagoa em palafitas, sobrevivendo da pesca e da extração de sal.<a href='https://www.tudosobreveneza.com/historia' class='text-success' target='blank'>www.tudosobreparis.com</a></div>");
+            }
+
+            if(place == "Coliseu"){
+                container.css({'background-image' : 'URL("img/coliseu-back.jfif")', 'background-position' : 'center'});
+
+                content.append("<div class='display-4 text-white'>COLISEU <img src='https://upload.wikimedia.org/wikipedia/commons/a/a6/Flag_of_Rome.svg' width='30' class='img-fluid' title='Rome'></div>");
+                content.append("<div class='text-white text-place' style='position: absolute; bottom: 10px;'>One of the most famous archaeological - and tourist - icons in the world, the Colosseum in Rome, the largest amphitheater in the city, began to be built in the year 72 d. C., by the emperor Vespasiano, to be inaugurated eight years later by its son Tito.<a href='https://viagemeturismo.abril.com.br/atracao/coloseo-coliseu/' class='text-success' target='blank'>viagemeturismo.abril.com.br</a></div>");
+            
+            }
+
+            if(place == "Quebec"){
+                container.css({'background-image' : 'URL("img/quebec-back.jfif")', 'background-position' : 'center'});
+
+                content.append("<div class='display-4 text-white'>QUEBEC <img src='https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Canada_%28Pantone%29.svg' width='30' class='img-fluid' title='Canada'></div>");
+                content.append("<div class='text-white text-place' style='position: absolute; bottom: 10px;'>Canadians from Quebec, capital of the province of the same name in the French part of the country, are sweet people. Until we ask what distinguishes them from the patricians on the English side. Journalist Caroline is blunt: “Eating, thinking, living, are separate worlds. We got there before. They are reserved; us, warm and cheerful. We enjoyed the day; they are dealers. Federal policy is theirs, so many Quebecers want to separate from the country ”.<a href='https://viagemeturismo.abril.com.br/cidades/quebec/' class='text-success' target='blank'>viagemeturismo.abril.com.br</a></div>");
+            }
+
+            if(place == "Fortaleza"){
+                container.css('background-image', 'URL("img/fortaleza-back.jfif")');
+
+                content.append("<div class='display-4 text-white'>FORTALEZA <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/1280px-Flag_of_Brazil.svg.png' width='30' class='img-fluid' title='Canada'></div>");
+                content.append("<div class='text-white text-place' style='position: absolute; bottom: 10px;'>Temperatures are high all year round, the sun does not escape and the rain is scarce. The infrastructure is one of the most anabolic to serve those who want to enjoy the sand and the sea, starting with the eclectic tents of Praia do Futuro. Those who visit the city can hardly resist stretching to neighboring Aquiraz, where is the best water park in the country, Beach Park. In terms of gastronomy, the capital of Ceará maintains four restaurants starring in GUIA BRASIL 2015.<a href='https://viagemeturismo.abril.com.br/cidades/fortaleza/' class='text-success' target='blank'>viagemeturismo.abril.com.br</a></div>");
+            
+            }
+        }
+
+        function MobileMenu() {
+            document.getElementById('toggler').checked = false;
+        }
+    </script>
 </body>
 
 </html>
