@@ -17,7 +17,10 @@
 
 <body>
 
-    <!-- section 1 -->
+    <!-- 
+        -- BARRA DE NAVEGAÇÃO PRINCIPAL. ELA FICARÁ OCULTA EM DISPOSITIVOS COM LARGURA MENOR OU IGUAL A 1024PX
+        -- SENDO SUBSTITUÍDA PELA BARRA MOBILE ENCONTRADA NO FIM DO DOCUMENTO
+     -->
     <nav class="navbar fixed-top" id="navbar-top">
         <a href="#" class="navbar-brand nav-link text-white">
             Company Name
@@ -36,6 +39,11 @@
         </ul>
     </nav>
 
+
+    <!-- 
+        -- CONTAINER COM UM BREVE TEXTO DE BOAS VINDAS AO USUÁRIO, ELE CONTEM UMA IMAGEM DE FUNDO NA VERSÃO DESKTOP E UM DEGRADE NA VERSÃO
+        -- MOBILE. TAMBÉM CONTA COM UM BOTÃO QUE FAZ O SCROLL ATÉ NOSSOS PRINCIPAIS PLANOS.
+     -->
     <div class="container-fluid container-home">
         <div class="welcome">
             <div class="text-center" style="font-family: 'Comfortaa', cursive; color: white;" id="welcome">
@@ -50,14 +58,16 @@
     </div>
 
 
-    <!-- section 2 -->
+    <!-- 
+        -- SESSÃO ONDE SE ENCONTRA OS PRINCIPAIS PLANOS DOS NOSSOS SERVIÇOS E UM BREVE TEXTO SOBRE A NOSSA EMPRESA. DENTRO DELA É POSSÍVEL ACESSAR A PAGINA DE 
+        -- SERVICES E A PAGINA DE ABOUT US.
+     -->
     <section class="section_full" id="plan_section">
         <div class="container text-dark p-4">
             <div class="p-4 font-weight-light text-left" id="plans">
                 <div class="title-lg">
                     Check out our plans
                 </div>
-                <!-- <p class="ml-5 h4 font-weight-light">Discover the best plan for your family</p> -->
             </div>
 
 
@@ -149,6 +159,12 @@
         unconsciously with the movement of the train, their high heels like polished hooves against the gray metal of
         the bright void beyond the chain link.
     </div>
+
+
+    <!-- 
+        -- CONTAINER DE LUGARES PARA CONHECER. ESTE CONTAINER CONTA COM UM SCROLL HORIZONTAL COM ALGUNS PONTOS TURISTICOS OU LUGARES NO MUNDO
+        -- ONDE RECOMENDAMOS VISITAR. ELE MOSTRA UM POUCO SOBRE O LOCAL AO CLICAR EM UM DOS LOCAIS E DEPOIS CLICAR EM SEE ABOUT.
+     -->
     <div class="container">
 
         <div class="p-4 title-lg font-weight-light">Places to meet</div>
@@ -157,35 +173,35 @@
             <div class="card">
                 <img src="img/paris-back.jfif" style="left: 0%;">
                 <label for="" onclick="showPlace('Paris')">
-                    saiba mais
+                    see about
                 </label>
             </div>
 
             <div class="card">
                 <img src="img/veneza-back.jfif">
                 <label for=""  onclick="showPlace('Veneza')">
-                    saiba mais
+                    see about
                 </label>
             </div>
 
             <div class="card">
                 <img src="img/coliseu-back.jfif">
                 <label for=""  onclick="showPlace('Coliseu')">
-                    saiba mais
+                    see about
                 </label>
             </div>
 
             <div class="card">
                 <img src="img/quebec-back.jfif">
                 <label for=""  onclick="showPlace('Quebec')">
-                    saiba mais
+                    see about
                 </label>
             </div>
 
             <div class="card">
                 <img src="img/fortaleza-back.jfif">
                 <label for=""  onclick="showPlace('Fortaleza')">
-                    saiba mais
+                    see about
                 </label>
             </div>
             <div class="">
@@ -209,29 +225,6 @@
 
     <div class="footer text-center">
         <hr>
-        <!-- <div class="container">
-            <div class="row">
-                <div class="col border-right">
-                    <div class="list-group text-center">
-                        <div class="navbar-brand text-left">Links</div>
-                        <a href="#" class="list-group-item list-group-item-action border-0">Home</a>
-                        <a href="#" class="list-group-item list-group-item-action border-0">Services</a>
-                        <a href="#" class="list-group-item list-group-item-action border-0">About Us</a>
-                        <a href="#" class="list-group-item list-group-item-action border-0">Contact</a>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="list-group text-center">
-                        <div class="navbar-brand text-left">Social</div>
-                        <a href="#" class="list-group-item list-group-item-action border-0">Facebook</a>
-                        <a href="#" class="list-group-item list-group-item-action border-0">Twitter</a>
-                        <a href="#" class="list-group-item list-group-item-action border-0">Instagram</a>
-                    </div>
-                </div>
-            </div>
-
-        </div> -->
-
         <p class="text-muted">© 2021 Grupo de TSI | All rights reserved</p>
     </div>
 
@@ -265,6 +258,12 @@
         </ul>
     </nav>
 
+
+    <!-- 
+        --  CONTAINER QUE CONTÉM O CONTEÚDO DO LUGAR ESCOLHIDO. ESSA DIV FICA NO FIM DO DOCUMENTO PARA QUE NÃO HAJA PROBLEMAS COM 
+        -- O Z-INDEX DO RESTO DA PAGINA. NELA TEMOS APENAS UM BOTÃO ATIVAVEL LOCALIZADO NO CANTO SUPERIOR DIREITO.ESTE BOTÃO FECHA A JANELA
+        -- DE SEE ABOUT.
+     -->
     <div class="container-place container-fluid position-fixed shadow">
         <button type="button" class="close text-white text-center" aria-label="Close" onclick="hidePlace()">
             <span aria-hidden="true">&times;</span>
